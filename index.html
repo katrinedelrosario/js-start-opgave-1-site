@@ -16,7 +16,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <h1>test side</h1>
+    <h1>test side</h1>          <!-- giver ikke class or id da der kun er én h1 -->
     <h2 class="smallHeadline">afsnit</h2>
     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
         quam,
@@ -32,52 +32,50 @@
     <h2 class="smallHeadline">fieldset</h2>
 
     <fieldset>
+        <legend>Forskellige inputs og interaktions muligheder</legend>   <!-- giver ikke class or id da der kun er én legend -->
 
-        <legend>Forskellige inputs og interaktions muligheder</legend>
+        <label for="monthInput" class="month">Month</label>   <!--tilføjede for="" på label da det skal være samme som id'et på tilhørende input-->
+        <input type="month" id="monthInput">
 
-        <label>Month</label>
-        <input type="month">
+        <label class="checkbox" for="checkboxInput"><input type="checkbox" name="checkbox id" id="checkboxInput">Check</label>
 
-        <label><input type="checkbox" name="checkbox">Check</label>
-
-        <label>Color</label>
-        <input type="color">
-
-
-        <label>radio buttons</label>
-        <label><input type="radio" name="radio">option 1</label>
-        <label><input type="radio" name="radio">option 2</label>
-        <label><input type="radio" name="radio">option 3</label>
+        <label class="color" for="color">Color</label>
+        <input type="color" id="colorInput">
 
 
-        <label>Range</label>
-        <input type="range">
-
-        <input type="button" value="input Button">
-
-
-        <input type="reset" value="Reset">
+        <label class="rbtn">radio buttons</label>
+        <label><input type="radio" name="radio" id="rbtn1">option 1</label>
+        <label><input type="radio" name="radio" id="rbtn2">option 2</label>
+        <label><input type="radio" name="radio" id="rbtn3">option 3</label>
 
 
-        <input type="submit" value="Submit">
+        <label class="range" for="rangeInput">Range</label>
+        <input type="range" id="rangeInput">
 
-        <button>button</button>
+        <input type="button" value="input Button" id="btnInput" class="btns">
 
-        <label>Select</label>
+
+        <input type="reset" value="Reset" id="btnReset" class="btns">
+
+
+        <input type="submit" value="Submit" id="btnSubmit" class="btns">
+
+        <button id="btnButton" class="btns">button</button>
+
+        <label class="select">Select</label>
 
         <select>
-            <optgroup label="first options">
-                <option>select 1</option>
-                <option>select 2</option>
-                <option>select 3</option>
+            <optgroup label="first options" class="firstOptions">
+                <option id="selectOpt1">select 1</option>
+                <option id="selectOpt2">select 2</option>
+                <option id="selectOpt3">select 3</option>
             </optgroup>
-            <optgroup label="second options">
-                <option>select 4</option>
-                <option>select 5</option>
-                <option>select 6</option>
+            <optgroup label="second options" class="secondOptions">
+                <option id="selectOpt4">select 4</option>
+                <option id="selectOpt5">select 5</option>
+                <option id="selectOpt6">select 6</option>
             </optgroup>
         </select>
-
     </fieldset>
 
 
